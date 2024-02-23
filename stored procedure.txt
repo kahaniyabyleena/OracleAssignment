@@ -1,0 +1,23 @@
+CREATE OR REPLACE procedure Discounts   
+As   
+BEGIN   
+UPDATE Orders   
+SET TotalAmount=TotalAmount-(TotalAmount*10/100)   
+WHERE ProductName=ProductName;   
+END;  
+
+/
+
+Call Discount
+
+
+CREATE OR REPLACE procedure Discounts   
+As   
+BEGIN   
+UPDATE Orders   
+SET TotalAmount=TotalAmount-(TotalAmount*10/100)   
+WHERE ProductName=ProductName;   
+END; 
+/
+
+CALL Discounts

@@ -1,0 +1,29 @@
+CREATE TABLE Customers (    
+    CustomerID INT PRIMARY KEY,    
+    FirstName VARCHAR(50) NOT NULL,    
+    LastName VARCHAR(50) NOT NULL,    
+    Email VARCHAR(100) UNIQUE,    
+    PhoneNumber VARCHAR(20)    
+);
+
+INSERT INTO Customers VALUES (1, 'Renuka', 'Harne', 'renuharne01@gmail.com', '7568877885');
+
+INSERT INTO Customers VALUES (2, 'Parikshit', 'Solanke', 'parikshitworld@gmail.com', '7524463678');
+
+INSERT INTO Customers VALUES (3, 'Madhuri', 'Dixit', 'madhuridixit24@gmail.com', '9867565678');
+
+INSERT INTO Customers VALUES (4, 'Rutika', 'Thakre', 'rutikathakre5@gmail.com', '7448877877');
+
+INSERT INTO Customers VALUES (5, 'Nikhil', 'Shastri', 'twosidegamer@gmail.com', '9325338899');
+
+INSERT INTO Customers(CustomerID,FirstName,LastName,PhoneNumber) VALUES (7,'Sarika','Kale','8456677889');
+
+INSERT INTO Customers(CustomerID,FirstName,LastName) VALUES (8,'Harry','Batra');
+
+INSERT INTO Customers(CustomerID,FirstName,LastName) VALUES (9,'John','Ahuja');
+
+INSERT INTO Customers(CustomerID,FirstName,LastName,Email) VALUES (10,'Shubhaman','Gill','criketworld@gmail.com');
+
+INSERT INTO Customers(CustomerID,FirstName,LastName) VALUES (11,'Aryan','Khan');
+
+select*from Customers;

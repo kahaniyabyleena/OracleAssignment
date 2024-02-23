@@ -1,0 +1,63 @@
+Select*from Customers;
+
+SELECT*FROM Orders ;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+SELECT*FROM Orders ORDER BY OrderID;
+
+DELETE from Customers where CustomerID=5;
+
+DELETE from Customers where CustomerID=6;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+INSERT INTO Customers(CustomerID,FirstName,LastName,PhoneNumber) VALUES (6,'Raghav','Sharma','7865678899');
+
+UPDATE Customers set FirstName='Rohit' where CustomerID=6;
+
+UPDATE Customers set FirstName='Virat' where CustomerID=7;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+SELECT * FROM Customers WHERE  PhoneNumber= '8263003344';
+
+SELECT*FROM Customers;
+
+SELECT * FROM Customers WHERE  PhoneNumber= '7856678899';
+
+SELECT * FROM  Customers ORDER BY LastName DESC;
+
+SELECT * FROM  Customers ORDER BY LastName DESC;
+
+SELECT Email, COUNT(*) AS Customers_Count FROM Customers GROUP BY Email;
+
+SELECT * FROM Customers WHERE LastName LIKE'S%';
+
+ALTER TABLE Customers   
+ADD Gender VARCHAR(10);
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+UPDATE Customers set Gender='Female' where CustomerID=1;
+
+UPDATE Customers set Gender='Male' where CustomerID=2;
+
+UPDATE Customers set Gender='Female' where CustomerID=3;
+
+UPDATE Customers set Gender='Male' where CustomerID=7;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+ALTER TABLE Customers   
+ADD Age INt;
+
+SELECT*FROM Customers ORDER BY CustomerID;
+
+ALTER TABLE Customers   
+DROP COLUMN Age;
+
